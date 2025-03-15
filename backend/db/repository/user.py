@@ -6,7 +6,7 @@ from db.models.default_user import User
 def create_new_user(user: UserCreate, db: Session):
     user = User(
         email=user.email, 
-        password=(user.password), 
+        password=(user.password),  
         is_active=True, 
     )
     
